@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+/* 💡 Tailwind v4에서 클래스 전략을 명시적으로 활성화하는 법 */
+@theme {
+  --color-slate-950: #020617;
+  --color-slate-800: #1e293b;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
